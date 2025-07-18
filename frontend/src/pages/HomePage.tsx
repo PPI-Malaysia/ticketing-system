@@ -39,15 +39,15 @@ const HomePage: React.FC = () => {
 	};
 
 	return (
-		<div className="min-h-screen bg-gray-50">
+		<div className="min-h-screen bg-primary-100">
 			{/* Hero Section */}
-			<div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+			<div className="bg-gradient-to-r from-primary-600 to-primary-500 text-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 					<div className="text-center">
 						<h1 className="text-4xl md:text-6xl font-bold mb-6">
 							Find Your Perfect Event
 						</h1>
-						<p className="text-xl md:text-2xl mb-8 text-blue-100">
+						<p className="text-xl md:text-2xl mb-8 text-primary-200">
 							Discover and book tickets for amazing events happening near you
 						</p>
 						<div className="flex justify-center">
@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
 										.getElementById("events-section")
 										?.scrollIntoView({ behavior: "smooth" })
 								}
-								className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+								className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-accent-400 hover:text-white transition-colors shadow-lg"
 							>
 								Browse Events
 							</button>
@@ -72,10 +72,12 @@ const HomePage: React.FC = () => {
 				className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
 			>
 				<div className="mb-8">
-					<h2 className="text-3xl font-bold text-gray-900 mb-2">
+					<h2 className="text-3xl font-bold text-primary-600 mb-2">
 						Upcoming Events
 					</h2>
-					<p className="text-gray-600">Find events that match your interests</p>
+					<p className="text-primary-700">
+						Find events that match your interests
+					</p>
 				</div>
 
 				<EventSearch

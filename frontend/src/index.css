@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'NeueKaine';
+  src: url('./assets/fonts/NeueKaine-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NeueKaine';
+  src: url('./assets/fonts/NeueKaine-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NeueKaine';
+  src: url('./assets/fonts/NeueKaine-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'NeueKaine', 'ui-sans-serif', 'system-ui', 'sans-serif';
+  
+  --color-primary-100: #fce4e6;
+  --color-primary-200: #f8c2c4;
+  --color-primary-300: #f39fa2;
+  --color-primary-400: #ee7d80;
+  --color-primary-500: #e04a4c;
+  --color-primary-600: #b52f31;
+  --color-primary-700: #8e2324;
+  --color-primary-800: #6b1b1c;
+  --color-primary-900: #4a1213;
+  
+  --color-secondary-100: #fff1f2;
+  --color-secondary-200: #ffe4e6;
+  --color-secondary-300: #fecdd3;
+  --color-secondary-400: #fda4af;
+  --color-secondary-500: #fb7185;
+  --color-secondary-600: #f43f5e;
+  --color-secondary-700: #e11d48;
+  --color-secondary-800: #be123c;
+  --color-secondary-900: #9f1239;
+  
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+  --color-accent-800: #92400e;
+  --color-accent-900: #78350f;
+}
+
+html, body, #root {
+  font-family: 'NeueKaine', 'ui-sans-serif', 'system-ui', 'sans-serif';
+}
